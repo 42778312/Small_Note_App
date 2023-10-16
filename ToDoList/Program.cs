@@ -11,6 +11,7 @@ namespace SimpleCalendarApp
         static Dictionary<DateTime, string> calendar = new Dictionary<DateTime, string>();
 
         static void Main(string[] args)
+            // test 
         {
             while (true)
             {
@@ -82,3 +83,4 @@ namespace SimpleCalendarApp
        
     }
 }
+

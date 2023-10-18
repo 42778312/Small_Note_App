@@ -16,12 +16,12 @@ namespace SimpleCalendarApp
             while (true)
             {
                 Console.WriteLine("note Application");
-                Console.WriteLine("Choose one of the following Choices:");
-                Console.WriteLine("1. Choose a Day :");
-                Console.WriteLine("2. View saved Notes :");
-                Console.WriteLine("3. Exit ");
+                Console.WriteLine("\nChoose one of the following Choices:");
+                Console.WriteLine("\n1. Choose a Day :");
+                Console.WriteLine("\n2. View saved Notes :");
+                Console.WriteLine("\n3. Exit ");
 
-                Console.WriteLine(" choose an Option: ");
+                Console.WriteLine(" \nchoose an Option: ");
 
                 if (int.TryParse(Console.ReadLine(), out int choice))
                 {
@@ -43,7 +43,7 @@ namespace SimpleCalendarApp
                     }
 
                 }
-                else { Console.WriteLine(" invalide choice , try again"); }
+                else { Console.WriteLine(" ↑ Choose one of the Options up there ↑ "); }
             }
             
 
@@ -53,7 +53,7 @@ namespace SimpleCalendarApp
         }
         static void ChooseDay()
         {
-            Console.WriteLine("Enter a date ( yyyy-MM-dd )");
+            Console.WriteLine("! Enter a date in any Date Form ! ");
 
             if (DateTime.TryParse(Console.ReadLine(), out DateTime selectedDate))
             {
@@ -61,7 +61,7 @@ namespace SimpleCalendarApp
                 string note = Console.ReadLine();
 
                 calendar[selectedDate] = note;
-                Console.WriteLine(" your note saved :) ");
+                Console.WriteLine(" your note saved :) choose 2 to see the Note ");
 
             }
             else
